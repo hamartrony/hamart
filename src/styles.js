@@ -181,6 +181,14 @@ export const AppDiv = styled.div`
     border-radius: 1em;
   }
 
+  aside h2 {
+    font-weight: 900;
+  }
+
+  aside .links {
+    background-color: white;
+  }
+
   footer {
     margin-top: 10px;
     width: 95%;

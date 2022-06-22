@@ -7,60 +7,51 @@ import { GrLinkedin } from "react-icons/gr";
 import { BsFillChatRightDotsFill } from "react-icons/bs";
 import { CgMenuGridR } from "react-icons/cg";
 
-export const Head = () => {
+export const Head = ({ handlePage, modulo }) => {
   return (
-    <HeadDiv>
+    <HeadDiv modulo={modulo}>
       <div className="head">
         <div className="linkedin">
           <a href="https://www.linkedin.com/in/hamartrony/" target="blank">
-            {/* <img src={linkedin} alt="linkedin icon"></img> */}
             <GrLinkedin />
           </a>
         </div>
 
-        <a
-          href="https://www.linkedin.com/in/hamartrony/"
-          target="blank"
-          className="home"
-        >
+        <button className="home" id="home" onClick={() => handlePage("home")}>
           <AiFillHome />
           <p>Início</p>
-        </a>
+        </button>
 
-        <a
-          href="https://www.linkedin.com/in/hamartrony/"
-          target="blank"
+        <button
+          onClick={() => handlePage("projetos")}
+          id="proj"
           className="home"
         >
           <BsFillBagDashFill />
           <p>Projetos</p>
-        </a>
+        </button>
 
-        <a
-          href="https://www.linkedin.com/in/hamartrony/"
-          target="blank"
-          className="home"
-        >
+        <button onClick={() => handlePage("sobre")} id="sobre" className="home">
           <FaUserAlt />
           <p>Sobre</p>
-        </a>
+        </button>
 
-        <a
-          href="https://www.linkedin.com/in/hamartrony/"
-          target="blank"
+        <button
+          onClick={() => handlePage("contato")}
+          id="cont"
           className="home"
         >
           <BsFillChatRightDotsFill />
           <p>Contato</p>
-        </a>
+        </button>
         <div className="menu">
-          <a
+          <button
             href="https://www.linkedin.com/in/hamartrony/"
             target="blank"
             className="home"
           >
             <CgMenuGridR />
-          </a>
+          </button>
         </div>
       </div>
     </HeadDiv>

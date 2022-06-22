@@ -15,18 +15,23 @@ export const HeadDiv = styled.div`
   /* header #####################################*/
   .head {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 
   .home {
+    height: 100%;
     font-size: 2em;
     color: #666666;
-    text-decoration: none;
+    border: none;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 
   .home p {
@@ -49,7 +54,7 @@ export const HeadDiv = styled.div`
 
   .home :first-child:active {
     font-size: 0.8em;
-    padding: 0.18em;
+    padding: 0.1em;
   }
 
   .home p:hover {
@@ -58,12 +63,16 @@ export const HeadDiv = styled.div`
 
   .menu {
     margin: 0;
-    margin-right: 10px;
+    margin-right: 15px;
     width: 1em;
     height: auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-left: 0.5px #505050 solid;
-    padding-left: 1.2em;
+    padding-left: 1em;
+  }
+
+  #aqui {
+    text-decoration: ${(props) => (props.modulo === "home" ? "solid" : "none")};
   }
 
   @media only screen and (min-width: 770px) {
@@ -90,6 +99,23 @@ export const HeadDiv = styled.div`
       display: inherit;
       font-size: 0.5em;
       margin: 0;
+    }
+
+    #home {
+      border-bottom: ${(props) =>
+        props.modulo === "home" ? ".15em  solid black" : "none"};
+    }
+    #proj {
+      border-bottom: ${(props) =>
+        props.modulo === "projetos" ? ".15em  solid black" : "none"};
+    }
+    #sobre {
+      border-bottom: ${(props) =>
+        props.modulo === "sobre" ? ".15em  solid black" : "none"};
+    }
+    #cont {
+      border-bottom: ${(props) =>
+        props.modulo === "contato" ? ".15em  solid black" : "none"};
     }
   }
 `;

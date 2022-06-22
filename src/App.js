@@ -13,6 +13,7 @@ import { MdMarkEmailRead } from "react-icons/md";
 import { Sobre } from "./components/sobre/sobre";
 import somosKenzie from "./images/coverkenzie.png";
 import hamart from "./images/hamartPerfil.png";
+import Cards from "./components/cards";
 
 function App() {
   const [modulo, setModulo] = useState("home");
@@ -21,10 +22,23 @@ function App() {
     setModulo(page);
   };
 
+  const empresas = [
+    {
+      img: "https://media-exp2.licdn.com/dms/image/C4E0BAQH8smZMfETo8A/company-logo_100_100/0/1655211431730?e=1663804800&v=beta&t=2wg7Wt9iw_6OcQYFlyngMpuIpE5M_FfMDnpZaIkaU6w",
+      sub: "Vivo (Telefônica Brasil)",
+      text: "out de 2016 - jan de 2018 · 1 ano 4 mesesout de 2016 - jan de 2018 · 1 ano 4 meses Curitiba, Paraná, Brasil",
+    },
+    {
+      img: "https://media-exp2.licdn.com/dms/image/C510BAQHCIWoDxQI8ZQ/company-logo_100_100/0/1519891915490?e=1663804800&v=beta&t=KXhYxzuuJWNbxPk5qu6F4f9bYzgiHKjgK6qA2HDwEpc",
+      sub: "JL Informatica",
+      text: "set de 2011 - dez de 2015 · 4 anos 4 mesesset de 2011 - dez de 2015 · 4 anos 4 meses Goiânia, Goiás, Brasil",
+    },
+  ];
+
   return (
     <AppDiv modulo={modulo}>
       <div className="main">
-        <Head />
+        <Head handlePage={handlePage} modulo={modulo} />
         {modulo === "contato" && <Contato handlePage={handlePage} />}
         {modulo === "projetos" && <Projetos handlePage={handlePage} />}
         {modulo === "sobre" && <Sobre handlePage={handlePage} />}
@@ -57,15 +71,18 @@ function App() {
             </div>
           </section>
 
+          <Cards title={"Expêriencia"} empresas={empresas} />
           <aside>
             <div className="links">
-              <button className="sobre">Mais sobre mim...</button>
-              <button className="contato">Contatos Hamart</button>
-              <button className="mais">Mais</button>
+              <h2>Experiência</h2>
               <div className="descr">
-                <h2>Buscando emprego</h2>
-                <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
-                <p className="font2">Ver todos os detalhes</p>
+                <h2>Assistente administrativo</h2>
+                <p></p>
+                <p></p>
+                <p className="font2">
+                  Competências:{" "}
+                  <p>Suporte técnico · Atendimento ao cliente · </p>
+                </p>
               </div>
             </div>
           </aside>
