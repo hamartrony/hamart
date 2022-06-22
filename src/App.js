@@ -58,6 +58,32 @@ function App() {
           </div>
         </section>
 
+        <aside>
+          <div className="links">
+            <button className="sobre">Mais sobre mim...</button>
+            <button className="contato">Contatos Hamart</button>
+            <button className="mais">Mais</button>
+            <div className="descr">
+              <h2>Buscando emprego</h2>
+              <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
+              <p className="font2">Ver todos os detalhes</p>
+            </div>
+          </div>
+        </aside>
+
+        <aside>
+          <div className="links">
+            <button className="sobre">Mais sobre mim...</button>
+            <button className="contato">Contatos Hamart</button>
+            <button className="mais">Mais</button>
+            <div className="descr">
+              <h2>Buscando emprego</h2>
+              <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
+              <p className="font2">Ver todos os detalhes</p>
+            </div>
+          </div>
+        </aside>
+
         <footer>
           <h2>Hamart Rony</h2>
           <p>Desenvolvimento Web</p>

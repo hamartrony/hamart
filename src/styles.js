@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AppDiv = styled.div`
   background-color: #f3f2ef;
   color: #000;
-  height: 100vh;
+  height: auto;
   width: 100vw;
 
   display: flex;
@@ -155,6 +155,20 @@ export const AppDiv = styled.div`
     font-size: 0.8em;
     font-weight: 900;
     color: #0b66c2;
+  }
+
+  aside {
+    padding-top: 2em;
+    width: 97%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    font-size: calc(10px + 1vmin);
+    margin-top: 4em;
+    background-color: #fff;
+    border-radius: 1em;
   }
 
   /* antigo */
