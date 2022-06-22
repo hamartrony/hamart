@@ -24,6 +24,7 @@ export const Head = () => {
           className="home"
         >
           <AiFillHome />
+          <p>Início</p>
         </a>
 
         <a
@@ -32,6 +33,7 @@ export const Head = () => {
           className="home"
         >
           <BsFillBagDashFill />
+          <p>Projetos</p>
         </a>
 
         <a
@@ -40,6 +42,7 @@ export const Head = () => {
           className="home"
         >
           <FaUserAlt />
+          <p>Sobre</p>
         </a>
 
         <a
@@ -48,6 +51,7 @@ export const Head = () => {
           className="home"
         >
           <BsFillChatRightDotsFill />
+          <p>Contato</p>
         </a>
         <div className="menu">
           <a

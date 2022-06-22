@@ -23,66 +23,66 @@ function App() {
 
   return (
     <AppDiv modulo={modulo}>
-      <div className="body">
+      <div className="main">
+        <Head />
         {modulo === "contato" && <Contato handlePage={handlePage} />}
         {modulo === "projetos" && <Projetos handlePage={handlePage} />}
         {modulo === "sobre" && <Sobre handlePage={handlePage} />}
         {modulo === "home" && <></>}
-
-        <Head />
-
-        <section>
-          <div className="imagens">
-            <img src={hamart} alt="hamart icon" className="hamart"></img>
-            <img src={somosKenzie} alt="Kenzie Wallpaper icon"></img>
-          </div>
-          <div className="text">
-            <h2>Hamart Rony</h2>
-            <h3>
-              Desenvolvedor Front End | Fullstack | JavaScript | React | Git |
-              Node | HTML | CSS
-            </h3>
-            <p>Curitiba, Paraná, Brasil</p>
-            <p className="font2">Informaçoes de contato</p>
-            <p className="font2">39 conexões</p>
-          </div>
-          <div className="links">
-            <button className="sobre">Mais sobre mim...</button>
-            <button className="contato">Contatos Hamart</button>
-            <button className="mais">Mais</button>
-            <div className="descr">
-              <h2>Buscando emprego</h2>
-              <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
-              <p className="font2">Ver todos os detalhes</p>
+        <div className="content">
+          <section>
+            <div className="imagens">
+              <img src={hamart} alt="hamart icon" className="hamart"></img>
+              <img src={somosKenzie} alt="Kenzie Wallpaper icon"></img>
             </div>
-          </div>
-        </section>
-
-        <aside>
-          <div className="links">
-            <button className="sobre">Mais sobre mim...</button>
-            <button className="contato">Contatos Hamart</button>
-            <button className="mais">Mais</button>
-            <div className="descr">
-              <h2>Buscando emprego</h2>
-              <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
-              <p className="font2">Ver todos os detalhes</p>
+            <div className="text">
+              <h2>Hamart Rony</h2>
+              <h3>
+                Desenvolvedor Front End | Fullstack | JavaScript | React | Git |
+                Node | HTML | CSS
+              </h3>
+              <p>Curitiba, Paraná, Brasil</p>
+              <p className="font2">Informaçoes de contato</p>
+              <p className="font2">39 conexões</p>
             </div>
-          </div>
-        </aside>
-
-        <aside>
-          <div className="links">
-            <button className="sobre">Mais sobre mim...</button>
-            <button className="contato">Contatos Hamart</button>
-            <button className="mais">Mais</button>
-            <div className="descr">
-              <h2>Buscando emprego</h2>
-              <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
-              <p className="font2">Ver todos os detalhes</p>
+            <div className="links">
+              <button className="sobre">Mais sobre mim...</button>
+              <button className="contato">Contatos Hamart</button>
+              <button className="mais">Mais</button>
+              <div className="descr">
+                <h2>Buscando emprego</h2>
+                <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
+                <p className="font2">Ver todos os detalhes</p>
+              </div>
             </div>
-          </div>
-        </aside>
+          </section>
+
+          <aside>
+            <div className="links">
+              <button className="sobre">Mais sobre mim...</button>
+              <button className="contato">Contatos Hamart</button>
+              <button className="mais">Mais</button>
+              <div className="descr">
+                <h2>Buscando emprego</h2>
+                <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
+                <p className="font2">Ver todos os detalhes</p>
+              </div>
+            </div>
+          </aside>
+
+          <aside>
+            <div className="links">
+              <button className="sobre">Mais sobre mim...</button>
+              <button className="contato">Contatos Hamart</button>
+              <button className="mais">Mais</button>
+              <div className="descr">
+                <h2>Buscando emprego</h2>
+                <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
+                <p className="font2">Ver todos os detalhes</p>
+              </div>
+            </div>
+          </aside>
+        </div>
 
         <footer>
           <h2>Hamart Rony</h2>

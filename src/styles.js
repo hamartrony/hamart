@@ -5,14 +5,24 @@ export const AppDiv = styled.div`
   color: #000;
   height: auto;
   width: 100vw;
-
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: center;
   font-size: calc(10px + 0.5vmin);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   section {
     width: 97%;
@@ -41,8 +51,8 @@ export const AppDiv = styled.div`
   }
 
   .imagens :first-child {
-    width: 6em;
-    height: 6em;
+    width: 80px;
+    height: 80px;
     position: absolute;
     border-radius: 60%;
     background-color: #505050;
@@ -171,56 +181,6 @@ export const AppDiv = styled.div`
     border-radius: 1em;
   }
 
-  /* antigo */
-
-  .body {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Menus */
-  .menu {
-    /* width: 95%; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10px;
-  }
-
-  /* imagens tecnologias */
-  .icons {
-    width: 95%;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .css img {
-    width: 11.5em;
-    height: 11.5em;
-    transform: ${(props) =>
-      props.modulo === "home" ? "rotate(45deg)" : "none"};
-    margin-top: ${(props) => (props.modulo === "home" ? "25px" : "0px")};
-    margin-left: -5em;
-  }
-
-  .js img {
-    width: 10em;
-    height: 10em;
-  }
-
-  .html img {
-    transform: ${(props) =>
-      props.modulo === "home" ? "rotate(-45deg)" : "none"};
-    width: 10em;
-    height: 10em;
-    margin-right: -5em;
-  }
-
   footer {
     margin-top: 10px;
     width: 95%;
@@ -244,16 +204,50 @@ export const AppDiv = styled.div`
     font-size: 4em;
   }
 
-  @media only screen and (min-width: 800px) {
-    .body {
-      /* width: 70vw; */
-      align-items: center;
-      max-width: 900px;
+  @media only screen and (min-width: 770px) {
+    .main {
+      max-width: 1000px;
+    }
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
 
-    .menu {
-      width: 80%;
-      justify-content: space-between;
+    section {
+      width: 63%;
+      height: 25em;
+    }
+
+    aside {
+      width: 33%;
+      height: 23em;
+    }
+
+    .imagens {
+      height: 33%;
+      display: flex;
+    }
+
+    .imagens :last-child {
+      width: 100%;
+      height: 6.5em;
+      border-radius: 0.7em 0.7em 0 0;
+    }
+
+    .imagens :first-child {
+      width: 5em;
+      height: 5em;
+    }
+
+    .text {
+      height: 35%;
+    }
+
+    .links {
+      height: 30%;
     }
   }
 `;

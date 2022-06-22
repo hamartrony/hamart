@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeadDiv = styled.div`
   position: fixed;
   width: 100vw;
-  height: 4em;
+  height: 3.5em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,7 +14,7 @@ export const HeadDiv = styled.div`
 
   /* header #####################################*/
   .head {
-    width: 97%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,6 +23,14 @@ export const HeadDiv = styled.div`
   .home {
     font-size: 2em;
     color: #666666;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home p {
+    display: none;
   }
 
   .linkedin {
@@ -35,12 +43,22 @@ export const HeadDiv = styled.div`
     color: #0b66c2;
   }
 
-  a:hover {
+  .home:hover {
+    color: black;
+  }
+
+  .home :first-child:active {
+    font-size: 0.8em;
+    padding: 0.18em;
+  }
+
+  .home p:hover {
     color: black;
   }
 
   .menu {
     margin: 0;
+    margin-right: 10px;
     width: 1em;
     height: auto;
     font-size: 1.5em;
@@ -48,17 +66,30 @@ export const HeadDiv = styled.div`
     padding-left: 1.2em;
   }
 
-  /* @media only screen and (max-width: 480px){
-        padding: 0;
-        flex-direction: row;
-        align-items: flex-start;
+  @media only screen and (min-width: 770px) {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    .head {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1000px;
+      font-size: 0.8em;
+    }
 
-       button{
-        font-size: calc(9px + .1vmin)
+    .linkedin {
+      display: flex;
+      width: 50%;
+    }
 
-       }
+    .home {
+      /* font-size: 1.9em; */
+    }
 
-       width: 95vw;
-
-    } */
+    .home p {
+      display: inherit;
+      font-size: 0.5em;
+      margin: 0;
+    }
+  }
 `;
