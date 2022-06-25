@@ -8,12 +8,14 @@ import { BsFillChatRightDotsFill } from "react-icons/bs";
 import { CgMenuGridR } from "react-icons/cg";
 
 export const Head = ({ handlePage, modulo }) => {
+  const hamart = "<h1>Hamart Rony</h1>";
+
   return (
     <HeadDiv modulo={modulo}>
       <div className="head">
         <div className="linkedin">
           <a href="https://www.linkedin.com/in/hamartrony/" target="blank">
-            <GrLinkedin />
+            {hamart}
           </a>
         </div>
 
@@ -22,14 +24,11 @@ export const Head = ({ handlePage, modulo }) => {
           <p>Início</p>
         </button>
 
-        <button
-          onClick={() => handlePage("projetos")}
-          id="proj"
-          className="home"
-        >
+        <div onClick={() => handlePage("projetos")} id="proj" className="home">
           <BsFillBagDashFill />
+
           <p>Projetos</p>
-        </button>
+        </div>
 
         <button onClick={() => handlePage("sobre")} id="sobre" className="home">
           <FaUserAlt />

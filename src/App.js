@@ -11,7 +11,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdMarkEmailRead } from "react-icons/md";
 import { Sobre } from "./components/sobre/sobre";
-import somosKenzie from "./images/coverkenzie.png";
+import somosKenzie from "./images/1.webp";
 import hamart from "./images/hamartPerfil.png";
 import Cards from "./components/cards";
 
@@ -57,11 +57,11 @@ function App() {
               </h3>
               <p>Curitiba, Paraná, Brasil</p>
               <p className="font2">Informaçoes de contato</p>
-              <p className="font2">39 conexões</p>
+              {/* <p className="font2">39 conexões</p> */}
             </div>
             <div className="links">
               <button className="sobre">Mais sobre mim...</button>
-              <button className="contato">Contatos Hamart</button>
+              <button className="contato">"Contatos Hamart"</button>
               <button className="mais">Mais</button>
               <div className="descr">
                 <h2>Buscando emprego</h2>
@@ -72,33 +72,9 @@ function App() {
           </section>
 
           <Cards title={"Expêriencia"} empresas={empresas} />
-          <aside>
-            <div className="links">
-              <h2>Experiência</h2>
-              <div className="descr">
-                <h2>Assistente administrativo</h2>
-                <p></p>
-                <p></p>
-                <p className="font2">
-                  Competências:{" "}
-                  <p>Suporte técnico · Atendimento ao cliente · </p>
-                </p>
-              </div>
-            </div>
-          </aside>
-
-          <aside>
-            <div className="links">
-              <button className="sobre">Mais sobre mim...</button>
-              <button className="contato">Contatos Hamart</button>
-              <button className="mais">Mais</button>
-              <div className="descr">
-                <h2>Buscando emprego</h2>
-                <p>Cargos Desenvolvedor front-end e Desenvolvedor da web</p>
-                <p className="font2">Ver todos os detalhes</p>
-              </div>
-            </div>
-          </aside>
+          <Cards title={"Expêriencia"} empresas={empresas} />
+          <Cards title={"Expêriencia"} empresas={empresas} />
+          <Cards title={"Expêriencia"} empresas={empresas} />
         </div>
 
         <footer>

@@ -40,15 +40,19 @@ export const HeadDiv = styled.div`
 
   .linkedin {
     display: flex;
-    width: 30%;
+    width: 40%;
   }
 
   .linkedin a {
-    font-size: 2.7em;
-    color: #0b66c2;
+    font-size: 0.9em;
+    text-decoration: none;
+    letter-spacing: 0px;
+    transform: scale(1, 2.5);
+    font-weight: 900;
+    color: #000;
   }
 
-  .home:hover {
+  .home:hover > p {
     color: black;
   }
 
@@ -71,8 +75,41 @@ export const HeadDiv = styled.div`
     padding-left: 1em;
   }
 
-  #aqui {
-    text-decoration: ${(props) => (props.modulo === "home" ? "solid" : "none")};
+  #home {
+    border-bottom: ${(props) =>
+      props.modulo === "home" ? ".15em  solid black" : "none"};
+    color: ${(props) => props.modulo === "home" && "#000"};
+  }
+  #home p {
+    color: ${(props) => props.modulo === "home" && "#000"};
+  }
+
+  #proj {
+    border-bottom: ${(props) =>
+      props.modulo === "projetos" ? ".15em  solid black" : "none"};
+    color: ${(props) => props.modulo === "projetos" && "#000"};
+  }
+  #proj p {
+    color: ${(props) => props.modulo === "projetos" && "#000"};
+  }
+
+  #sobre {
+    border-bottom: ${(props) =>
+      props.modulo === "sobre" ? ".15em  solid black" : "none"};
+    color: ${(props) => props.modulo === "sobre" && "#000"};
+  }
+
+  #sobre p {
+    color: ${(props) => props.modulo === "sobre" && "#000"};
+  }
+
+  #cont {
+    border-bottom: ${(props) =>
+      props.modulo === "contato" ? ".15em  solid black" : "none"};
+    color: ${(props) => props.modulo === "contato" && "#000"};
+  }
+  #cont p {
+    color: ${(props) => props.modulo === "contato" && "#000"};
   }
 
   @media only screen and (min-width: 770px) {
@@ -91,8 +128,13 @@ export const HeadDiv = styled.div`
       width: 50%;
     }
 
-    .home {
-      /* font-size: 1.9em; */
+    .linkedin a {
+      font-size: 2em;
+      transform: scale(1, 1.5);
+    }
+
+    .home:hover {
+      color: #000;
     }
 
     .home p {
@@ -100,22 +142,11 @@ export const HeadDiv = styled.div`
       font-size: 0.5em;
       margin: 0;
     }
+  }
 
-    #home {
-      border-bottom: ${(props) =>
-        props.modulo === "home" ? ".15em  solid black" : "none"};
-    }
-    #proj {
-      border-bottom: ${(props) =>
-        props.modulo === "projetos" ? ".15em  solid black" : "none"};
-    }
-    #sobre {
-      border-bottom: ${(props) =>
-        props.modulo === "sobre" ? ".15em  solid black" : "none"};
-    }
-    #cont {
-      border-bottom: ${(props) =>
-        props.modulo === "contato" ? ".15em  solid black" : "none"};
+  @media only screen and (min-width: 1900px) {
+    .head {
+      max-width: 1500px;
     }
   }
 `;

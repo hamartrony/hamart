@@ -41,4 +41,11 @@ export const CardsDiv = styled.div`
     width: 50px;
     height: 50px;
   }
+
+  @media only screen and (min-width: 770px) {
+    margin-top: 0;
+    margin-bottom: 1em;
+    width: 30%;
+    height: 25em;
+  }
 `;

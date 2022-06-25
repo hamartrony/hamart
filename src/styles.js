@@ -19,6 +19,7 @@ export const AppDiv = styled.div`
   }
 
   .content {
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +33,6 @@ export const AppDiv = styled.div`
     align-content: center;
     justify-content: space-between;
     font-size: calc(10px + 1vmin);
-    margin-top: 4em;
     background-color: #fff;
     border-radius: 1em;
   }
@@ -222,11 +222,13 @@ export const AppDiv = styled.div`
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
+      align-content: space-around;
     }
 
     section {
-      width: 63%;
+      width: 65%;
       height: 25em;
+      margin-bottom: 1em;
     }
 
     aside {
@@ -256,6 +258,12 @@ export const AppDiv = styled.div`
 
     .links {
       height: 30%;
+    }
+  }
+
+  @media only screen and (min-width: 1900px) {
+    .main {
+      max-width: 1500px;
     }
   }
 `;
