@@ -212,7 +212,7 @@ export const AppDiv = styled.div`
     font-size: 4em;
   }
 
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 800px) {
     .main {
       max-width: 1000px;
     }

@@ -20,6 +20,7 @@ export const CardProjects = ({ handleSaiba, ...rest }) => {
           {rest.a}
         </a>
         <p className="txt1">{rest.p}</p>
+
         <button className={rest.id} onClick={() => handleSaiba(rest.id)}>
           Saiba Mais
         </button>

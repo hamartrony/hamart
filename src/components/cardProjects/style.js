@@ -8,8 +8,8 @@ export const CardsProjDiv = styled.div`
 
   .attr {
     margin-top: 1em;
-    width: 10em;
-    height: 200px;
+    width: 10.7em;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -43,7 +43,7 @@ export const CardsProjDiv = styled.div`
     border: none;
     margin-top: 8px;
     width: 100px;
-    height: 20px;
+    height: 30px;
     background-color: #0b66c2;
     border-radius: 7px;
     color: #fff;
@@ -55,21 +55,19 @@ export const CardsProjDiv = styled.div`
   }
 
   .dialog {
-    background-color: yellow;
-    position: absolute;
-    /* margin-left: 267px; */
-    /* margin-top: -60px; */
-    margin-top: 20em;
-    width: 250px;
-    height: 350px;
-    display: ${(props) => (props.saibamais === false ? "none" : "inherit")};
+    /* position: absolute; */
+    /* margin-top: 20em; */
+    /* width: 250px; */
+    /* height: 350px; */
+    /* display: ${(props) =>
+      props.saibamais === false ? "none" : "inherit"}; */
     /* display: none; */
-    z-index: 2;
+    /* z-index: 2; */
   }
 
   img {
-    height: 7em;
-    width: 9em;
+    height: 8em;
+    width: 10em;
     filter: brightness(70%);
     border-radius: 10px;
   }
@@ -82,23 +80,19 @@ export const CardsProjDiv = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 10vw;
-    height: 10em;
-    background-color: ${(props) =>
+    width: 17em;
+    height: 20em;
+    /* background-color: ${(props) =>
       props.modulo !== "home" && "rgba(0, 0, 0, 0.5)"};
     backdrop-filter: ${(props) => props.modulo !== "home" && "blur(2px)"};
     -webkit-backdrop-filter: ${(props) =>
-      props.modulo !== "home" && "blur(5.5px)"};
+      props.modulo !== "home" && "blur(5.5px)"}; */
 
     z-index: 1;
 
     img {
       height: 10em;
       width: 15em;
-    }
-
-    .icons {
-      align-content: space-between;
     }
 
     .attr {
