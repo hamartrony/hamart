@@ -10,7 +10,7 @@ export const HeadDiv = styled.div`
   align-items: center;
   flex-wrap: nowrap;
   background-color: white;
-  z-index: 1;
+  z-index: 2;
 
   /* header #####################################*/
   .head {

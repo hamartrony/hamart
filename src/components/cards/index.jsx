@@ -1,10 +1,10 @@
 import { CardsDiv } from "./style";
 
-function Cards({ title, empresas }) {
+function Cards({ title, list }) {
   return (
     <CardsDiv>
       <h2>{title}</h2>
-      {empresas.map((item) => (
+      {list.map((item) => (
         <div className="item">
           <img src={item.img} alt="imagem"></img>
           <h3>{item.sub}</h3>

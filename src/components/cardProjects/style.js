@@ -1,54 +1,28 @@
 import styled from "styled-components";
 
-export const ProjetosDiv = styled.div`
-  position: absolute;
+export const CardsProjDiv = styled.div`
   width: 100vw;
-  /* height: 100vh; */
+  height: 250px;
   display: flex;
   justify-content: center;
 
-  .all {
-    width: 98%;
-    height: 400px;
-    position: absolute;
-    margin-top: 4.8em;
-    z-index: 1;
-    flex-wrap: nowrap;
-    background: #fff;
-    border-radius: 1em;
-    font-size: calc(10px + 0.5vmin);
+  .attr {
+    margin-top: 1em;
+    width: 10em;
+    height: 200px;
     display: flex;
     flex-direction: column;
-  }
-
-  .text {
-    width: 100%;
-    height: 15%;
-    margin: 0;
-    align-items: flex-start;
-    border-bottom: 1px solid #666666;
-  }
-
-  .tittle {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-
-    color: #000;
-  }
-
-  .icons {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    overflow-y: scroll;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .attr p {
     font-size: 1em;
     color: #000;
     font-weight: 400;
+    width: 8em;
+    text-align: center;
   }
 
   .txt2 {
@@ -81,12 +55,12 @@ export const ProjetosDiv = styled.div`
   }
 
   .dialog {
-    background-color: #fff;
+    background-color: yellow;
     position: absolute;
     /* margin-left: 267px; */
     /* margin-top: -60px; */
-    margin-top: 18.2em;
-    width: 100%;
+    margin-top: 20em;
+    width: 250px;
     height: 350px;
     display: ${(props) => (props.saibamais === false ? "none" : "inherit")};
     /* display: none; */
@@ -94,8 +68,8 @@ export const ProjetosDiv = styled.div`
   }
 
   img {
-    height: 5em;
-    width: 7em;
+    height: 7em;
+    width: 9em;
     filter: brightness(70%);
     border-radius: 10px;
   }
@@ -107,8 +81,9 @@ export const ProjetosDiv = styled.div`
   @media only screen and (min-width: 800px) {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: 1000vh;
+    flex-wrap: wrap;
+    width: 10vw;
+    height: 10em;
     background-color: ${(props) =>
       props.modulo !== "home" && "rgba(0, 0, 0, 0.5)"};
     backdrop-filter: ${(props) => props.modulo !== "home" && "blur(2px)"};
@@ -117,29 +92,24 @@ export const ProjetosDiv = styled.div`
 
     z-index: 1;
 
-    .all {
-      padding: 0;
-      flex-direction: column;
-      align-items: flex-start;
-      /* justify-content: center; */
-      width: 80%;
-      height: 40em;
-      max-width: 800px;
-    }
-
     img {
-      height: 5em;
-      width: 7em;
+      height: 10em;
+      width: 15em;
     }
 
     .icons {
-      height: 600px;
+      align-content: space-between;
+    }
+
+    .attr {
+      margin-top: 1em;
+      width: 20em;
+      height: 20em;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      /* justify-content: space-between; */
-      width: 100%;
-      overflow-y: inherit;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: space-around;
     }
   }
 `;

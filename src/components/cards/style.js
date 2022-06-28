@@ -36,7 +36,7 @@ export const CardsDiv = styled.div`
     margin-left: 1.5em;
   }
 
-  .item img {
+  img {
     position: absolute;
     width: 50px;
     height: 50px;

@@ -71,10 +71,10 @@ function App() {
             </div>
           </section>
 
-          <Cards title={"Expêriencia"} empresas={empresas} />
-          <Cards title={"Expêriencia"} empresas={empresas} />
-          <Cards title={"Expêriencia"} empresas={empresas} />
-          <Cards title={"Expêriencia"} empresas={empresas} />
+          <Cards title={"Expêriencia"} list={empresas} />
+          <Cards title={"Expêriencia"} list={empresas} />
+          <Cards title={"Expêriencia"} list={empresas} />
+          <Cards title={"Expêriencia"} list={empresas} />
         </div>
 
         <footer>
