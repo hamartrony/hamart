@@ -35,6 +35,8 @@ function App() {
     },
   ];
 
+  const tecs = [];
+
   return (
     <AppDiv modulo={modulo}>
       <div className="main">
@@ -71,9 +73,9 @@ function App() {
             </div>
           </section>
 
-          <Cards title={"Expêriencia"} list={empresas} />
-          <Cards title={"Expêriencia"} list={empresas} />
-          <Cards title={"Expêriencia"} list={empresas} />
+          <Cards title={"Tecnologias"} list={tecs} />
+          <Cards title={"Formação"} list={empresas} />
+          <Cards title={"Nao sei ainda"} list={empresas} />
           <Cards title={"Expêriencia"} list={empresas} />
         </div>
 
